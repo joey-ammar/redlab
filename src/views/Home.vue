@@ -3,64 +3,16 @@
 </script>
 
 <template>
-
-    <div class="main d-flex justify-content-center">
-        <div class="text-center">
-            <h1>REDLAB</h1>
-            <p>Log in to your Redmine Account</p>
-        </div>
-
-
-        <div>
-  <b-card
-    title="Card Title"
-    img-src="https://picsum.photos/600/300/?image=25"
-    img-alt="Image"
-    img-top
-    tag="article"
-    style="max-width: 20rem;"
-    class="mb-2"
-  >
-    <b-card-text>
-      Some quick example text to build on the card title and make up the bulk of the card's content.
-    </b-card-text>
-
-    <b-button href="#" variant="primary">Go somewhere</b-button>
-  </b-card>
-</div>
-
-
-        <form>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-danger">Submit</button>
-        </form>
-    </div>
-
-   
+   <div class="main d-flex flex-column justify-content-center align-items-center">
+        <h1>Willkomen TO REDLAB</h1>
+   </div>>
 </template>
 
 <style scoped lang="scss">
+
     .main {
-        font-family: Arial, Helvetica, sans-serif;
         height: 100vh;
-        align-items: center;
-        padding: 2rem 0rem;
-        flex-direction: column;
-        h1 {
-            color: red;
-            font-size: 2rem;
-        }
+        background-color: #eaedef;
     }
+
 </style>
