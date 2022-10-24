@@ -7,22 +7,20 @@ import router from './router'
 import i18n from './i18n.js';
 
 import "bootstrap/dist/css/bootstrap.css";
-
+import "bootstrap/dist/js/bootstrap.js";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faUserSecret, faFlask } from '@fortawesome/free-solid-svg-icons'
-library.add(faUserSecret, faFlask)
-
-
 import './assets/main.css'
 
+
+library.add(faUserSecret, faFlask)
 const app = createApp(App)
 
 app.use(createPinia())
 app.use(router)
 app.use(BootstrapVue3)
 app.component('font-awesome-icon', FontAwesomeIcon)
-app.mount('#app')
 app.use(i18n);
+app.mount('#app')
 
-import "bootstrap/dist/js/bootstrap.js";
