@@ -1,6 +1,6 @@
 <script setup>
     import i18n from '../i18n';
-    const {t, locale, messages} = i18n.global;
+    const {t, locale} = i18n.global;
     let lang = {
         en: locale.value = 'en',
         ja: locale.value = 'ja'
@@ -20,6 +20,7 @@
 
         <h1>Red<font-awesome-icon class="red" :icon="['fas', 'flask']" />Lab</h1>
         <h1>You Have the Access Token credentials</h1>
+        {{t('name')}}
     </div>
     
 </template>

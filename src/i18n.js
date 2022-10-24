@@ -2,10 +2,12 @@ import { createI18n } from 'vue-i18n'
 
 const messages = {
     en: {
-        hello: 'hello world'
+        hello: 'hello world',
+        name: "Joey"
     },
     ja: {
-        hello: 'こんにちは、世界'
+        hello: 'こんにちは、世界',
+        name: "世界"
     }
 }
 
