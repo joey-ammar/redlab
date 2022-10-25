@@ -1,14 +1,18 @@
 <script setup>
-     import i18n from '../i18n';
-     const {t, locale} = i18n.global;
+    import { useCounterStore } from '@/stores/counter'
+    const counter = useCounterStore();
+    counter.$patch({ count: counter.count + 1 })
+    counter.increment()
+    console.log(counter.name);
+    let name = counter.name;
 </script>
 
 <template>
     <div class="main d-flex flex-column justify-content-center align-items-center">
         {{$t('hello')}}
+        {{counter.count}}
         <h1>Red<font-awesome-icon class="red" :icon="['fas', 'flask']" />Lab</h1>
-        <h1>You Have the Access Token credentials</h1>
-
+        <h1>Welcome {{name}} You have the access Token!</h1>
     </div>
     
 </template>
