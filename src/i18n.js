@@ -1,14 +1,10 @@
 import { createI18n } from 'vue-i18n'
+import en from "./locals/en.json"
+import de from "./locals/de.json"
 
 const messages = {
-    en: {
-        hello: 'hello world',
-        name: "Joey"
-    },
-    ja: {
-        hello: 'こんにちは、世界',
-        name: "世界"
-    }
+    en,
+    de
 }
 
 const i18n = createI18n({

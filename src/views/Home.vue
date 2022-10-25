@@ -3,7 +3,7 @@
     const {t, locale} = i18n.global;
     let lang = {
         en: locale.value = 'en',
-        ja: locale.value = 'ja'
+        de: locale.value = 'de'
     }
 
 </script>
@@ -13,7 +13,7 @@
 
         <select v-model="locale">
             <option :value="lang.en">en</option>
-            <option :value="lang.ja">ja</option>
+            <option :value="lang.de">de</option>
         </select>
 
         {{t('hello')}}
