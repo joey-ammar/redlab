@@ -1,15 +1,11 @@
 <script setup>
-  import { useRouter, useRoute } from 'vue-router'
-  const router = useRouter()
-  const route = useRoute()
+
+  import Nav from "./views/Nav/Nav.vue"
 
 </script>
 
 <template>
-   <div class="nav">
-      <router-link to="/">Home</router-link>
-      <router-link to="/token">Token</router-link>
-   </div>
+    <Nav />
     <router-view />
 </template>
 
