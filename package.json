@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "cypress:open": "cypress open",
     "preview": "vite preview --port 4173",
     "test:e2e": "start-server-and-test preview http://localhost:4173/ 'cypress open --e2e'",
     "test:e2e:ci": "start-server-and-test preview http://localhost:4173/ 'cypress run --e2e'",
@@ -30,7 +31,7 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.0.3",
     "@vitejs/plugin-vue-jsx": "^2.0.1",
-    "cypress": "^10.7.0",
+    "cypress": "^10.10.0",
     "sass": "^1.55.0",
     "sass-loader": "^13.1.0",
     "start-server-and-test": "^1.14.0",
