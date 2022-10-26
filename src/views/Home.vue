@@ -8,13 +8,9 @@
     const users = NameOfUsers();
 
 
-    users.getList();
+    
+
     let allP = users.allPeople;
-    allP.forEach(element => {
-        element.data.forEach(e => {
-            console.log(e.name)
-        })
-    });
 
     counter.$patch({ count: counter.count + 1 })
     counter.increment()
@@ -23,12 +19,17 @@
         name.$patch({username: "Mike"});
     }
 
+    const getTheNames = () => {
+        users.getList();
+    }
+   
+
 </script>
 
 <template>
     <div class="main d-flex flex-column justify-content-center align-items-center">
         {{$t('hello')}} 
-        <h1>LIST</h1>
+        <h1 @click="getTheNames">LIST</h1>
         
         <ul>
             <li v-for="names in allP">
